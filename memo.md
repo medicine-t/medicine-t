@@ -3,3 +3,6 @@
 
 ## ローカルサーバーで動かすだけ(ホットリロード付き)
 `$ hugo server`
+
+## 新規記事作成
+`$ hugo new post/<filename>.md`
