@@ -1,129 +1,153 @@
-baseURL = "https://medicine-t.github.io/medicine-t"
-title = "薬味の覚え書き"
-author = "yakumi"
-languageCode = "ja"
-DefaultContentLanguage = "ja"
-enableInlineShortcodes = true
-theme = "Blonde"
-enableRobotsTXT = true
-publishDir = "docs"
-canonifyurls = true
+baseURL = "https://medicine-t.github.io/medicine-t/"
+title = "medicine-blog"
 
-# Please enable this feature if the site is available in Japanese, Chinese or Korean.
+theme = "fuji"
 hasCJKLanguage = true
+enableEmoji = true
+enableRobotsTXT = true
+disableKinds = ["taxonomy"]
+ignoreErrors = ["error-disable-taxonomy"]
 
-# If you're using Google Analytics, you can enable this feature.
-#googleAnalytics = "G-1234567890"
+## Change this two to switch between different language
+languageCode = "ja"           # For RSS, view https://www.rssboard.org/rss-language-codes
+defaultContentLanguage = "ja" # For HTML page, now support: en, zh-hans, zh-hant, ja, nl, pl, it
 
-# Disqus Comment System
-#disqusShortname = ""
+summaryLength = 100 # Custom summary length, add <!--more--> in post file to custom split point
+paginate = 10
+
+# googleAnalytics = "UA-000000000-0" # Set your Google Analytics UA here
+
+[outputFormats]
+[outputFormats.SearchIndex]
+isPlainText = true
+notAlternative = true
+mediaType = "application/json"
+path = "/search/"
+
+[outputs]
+home = ["HTML", "RSS", "SearchIndex"]
+
+[permalinks]
+post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
 
 [params]
-# Base color of the website.
-# https://tailwindcss.com/docs/background-color
-base_color = "bg-gray-800"
+author = "DSRKafuU"                # You can also set author in post front matter individually
+subTitle = "A minimal Hugo theme."
+defaultTheme = "dark"              # default theme when first visit (auto|dark|light)
 
-#Site description
-description = "github.io/medicine-t"
+# Source URL of the website, will appear in the footer
+sourceURL = "https://github.com/dsrkafuu/hugo-theme-fuji"
 
-# The number of articles to be displayed on a single page.
-paginator_pages = "5"
+# Use CloudFlare Workers to accelerate the Google Analytics
+# If you are using this please comment the googleAnalytics above
+# Check https://github.com/SukkaW/cloudflare-workers-async-google-analytics for more details
+# googleAnalyticsTid = "UA-000000000-0"
+# googleAnalyticsRoute = "https://*.*.workers.dev/"
 
-# Enable this if you want the archive list to be in a drop-down format.
-archive_dropdown = "false"
+# Google AdSense
+# The AdSense code will be inserted between the head tags of your site.
+# googleAdsense = "0000000000000000"
 
-# Number of tags to be displayed.
-tagsLimit = 20
+# Word counter and read time indicator in post metadata
+showWordCounter = true
+showReadTime = false
 
-# Dark mode by default : dark
-# Light mode by default : light
-darkmode = "dark"
+# License in the footer
+showLicenseInFooter = false
 
-  [params.ad]
-    # Google AdSense
-    # ex. ca-pub-0000000000000000
-    googleAdSense = ""
+# License at the end of each post
+showLicense = true
+showToc = true
 
-    # ex. 000000000
-    adslot = ""
+# Copyright
+copyrightStartYear = "2020"
 
-    # Placement of ads
-    postTop = false
-    postBottom = false
+# Open Graph & Twitter Card variables
+# You can also set description and images in post front matter individually
+description = "A minimal Hugo theme with nice theme color."
+og = "/img/og.png"                                          # This will use the image called og.png in static/img folder
 
-  [params.post]
-    # Show thumbnails
-    thumbnail = true
+# Posts shown in homepage
+mainSections = ["post"]
 
-    # Disable the "NO IMAGE" image.
-    noimage = true
+# Bangumi image chart id
+# bgmImageChart = "000000"
 
-    # See the Tailwind CSS documentation to set it up.
-    # Recommended settings are h-32 to h-48.
-    # https://tailwindcss.com/docs/height
-    thumbnail_height = "lg:h-44"
+# License
+license = "CC BY-NC-SA 4.0"
+licenseLink = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
 
-    # https://tailwindcss.com/docs/width
-    thumbnail_width = "lg:w-auto"
+# Comments
+# utterances, see: https://utteranc.es/
+# utterancesRepo = "*/*"
+# utterancesIssueTerm = "pathname"
 
-    # Number of characters in description
-    description = "130"
+# Disqus, see: https://disqus.com/admin/install/platforms/universalcode/
+# disqusShortname = "*********"
+# Also use DisqusJS for accessing from Mainland China, see: https://github.com/SukkaW/DisqusJS
+# If you want to set multiple api key, see theme's README for more details
+# disqusJSApi = "https://*********/"
+# disqusJSApikey = "**********"
 
-  [params.widgets]
-    # Display widgets
-    display = true
+# custom lazyload placeholder
+# 16:9
+lazyPlaceholder = "/assets/lazyload/dsrca_loading_480x270.svg"
+# 32:9
+lazyPlaceholderRow = "/assets/lazyload/dsrca_loading_960x270.svg"
+# 8:9
+lazyPlaceholderCol = "/assets/lazyload/dsrca_loading_480x540.svg"
 
-    # Order of widgets to display
-    widgets = ["search", "archive", "category", "tags", "recent"]
+# Let images display in full brightness under dark mode
+# disableDarkImage = true
 
-# If you're using Yandex.Metrica, you can enable this feature.
-#[params.analytics.yandexmetrica]
-#    enabled = true
-#    tagNumber = ''
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true # Enable user to embed HTML snippets in Markdown content
+[markup.highlight]
+codeFences = false # Disable Hugo's code highlighter
 
-[menu]
-
-  [[menu.main]]
-    identifier = "home"
-    name = "Home"
-    url = "/"
-    weight = 1
-
-  [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 2
-
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3
 
 [taxonomies]
-category = "categories"
 tag = "tags"
-archive = "archives"
 
-[privacy]
+[menu]
+[[menu.nav]]
+name = "Home"
+url = "/"
+weight = 1
+[[menu.nav]]
+name = "Archives"
+url = "/archives/"
+weight = 2
+[[menu.nav]]
+name = "About"
+url = "/about/"
+weight = 3
+[[menu.nav]]
+name = "Search"
+url = "/search/"
+weight = 4
+[[menu.nav]]
+name = "RSS"
+url = "/index.xml"
+weight = 5
 
-  [privacy.vimeo]
-    disabled = false
-    simple = true
+[[menu.link]]
+name = "GitHub"
+url = "https://github.com/dsrkafuu"
+weight = 1
+[[menu.link]]
+name = "Twitter"
+url = "https://twitter.com/dsrkafuu"
+weight = 2
 
-  [privacy.twitter]
-    disabled = false
-    enableDNT = true
-    simple = true
 
-  [privacy.instagram]
-    disabled = false
-    simple = true
+[build]
+noJSConfigInAssets = true
 
-  [privacy.youtube]
-    disabled = false
-    privacyEnhanced = true
-
-[services]
-
-  [services.instagram]
-    disableInlineCSS = true
-
-  [services.twitter]
-    disableInlineCSS = true
+[security]
+enableInlineShortcodes = true
