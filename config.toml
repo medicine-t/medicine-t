@@ -9,6 +9,8 @@ disableKinds = ["taxonomy"]
 ignoreErrors = ["error-disable-taxonomy"]
 publishDir = "docs"
 
+math = true
+
 ## Change this two to switch between different language
 languageCode = "ja"           # For RSS, view https://www.rssboard.org/rss-language-codes
 defaultContentLanguage = "ja" # For HTML page, now support: en, zh-hans, zh-hant, ja, nl, pl, it
@@ -32,12 +34,12 @@ home = ["HTML", "RSS", "SearchIndex"]
 post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
 
 [params]
-author = "DSRKafuU"                # You can also set author in post front matter individually
-subTitle = "A minimal Hugo theme."
+author = "yakumi"                # You can also set author in post front matter individually
+subTitle = "なんとはない大学生のなんとはない話"
 defaultTheme = "dark"              # default theme when first visit (auto|dark|light)
 
 # Source URL of the website, will appear in the footer
-sourceURL = "https://github.com/dsrkafuu/hugo-theme-fuji"
+sourceURL = "https://github.com/medicine-t/medicine-t"
 
 # Use CloudFlare Workers to accelerate the Google Analytics
 # If you are using this please comment the googleAnalytics above
@@ -51,21 +53,21 @@ sourceURL = "https://github.com/dsrkafuu/hugo-theme-fuji"
 
 # Word counter and read time indicator in post metadata
 showWordCounter = true
-showReadTime = false
+showReadTime = true
 
 # License in the footer
 showLicenseInFooter = false
 
 # License at the end of each post
-showLicense = true
-showToc = true
+showLicense = false
+showToc = false
 
 # Copyright
-copyrightStartYear = "2020"
+copyrightStartYear = "2022"
 
 # Open Graph & Twitter Card variables
 # You can also set description and images in post front matter individually
-description = "A minimal Hugo theme with nice theme color."
+description = ""
 og = "/img/og.png"                                          # This will use the image called og.png in static/img folder
 
 # Posts shown in homepage
@@ -75,8 +77,8 @@ mainSections = ["post"]
 # bgmImageChart = "000000"
 
 # License
-license = "CC BY-NC-SA 4.0"
-licenseLink = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+#license = "CC BY-NC-SA 4.0"
+#licenseLink = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
 
 # Comments
 # utterances, see: https://utteranc.es/
@@ -139,12 +141,13 @@ weight = 5
 
 [[menu.link]]
 name = "GitHub"
-url = "https://github.com/dsrkafuu"
+url = "https://github.com/medicine-t"
 weight = 1
-[[menu.link]]
-name = "Twitter"
-url = "https://twitter.com/dsrkafuu"
-weight = 2
+
+#[[menu.link]]
+#name = "Twitter"
+#url = "https://twitter.com/dsrkafuu"
+#weight = 2
 
 
 [build]
