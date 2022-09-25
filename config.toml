@@ -1,6 +1,6 @@
-baseURL = "https://medicine-t.github.io"
-title = "Blonde"
-author = "wamo"
+baseURL = "https://medicine-t.github.io/medicine-t/"
+title = "薬味の覚え書き"
+author = "yakumi"
 languageCode = "ja"
 DefaultContentLanguage = "ja"
 enableInlineShortcodes = true
@@ -95,11 +95,6 @@ darkmode = "dark"
     url = "/about/"
     weight = 2
 
-  [[menu.main]]
-    identifier = "contact"
-    name = "Contact"
-    url = "/contact/"
-    weight = 3
 
 [taxonomies]
 category = "categories"
