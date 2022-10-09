@@ -1,7 +1,7 @@
 ---
 title: "Science Leader 2022"
 date: 2022-10-09T17:52:58+09:00
-draft: true
+draft: false
 ---
 
 人生3度目のサイエンスリーダーはTAとしての参加でした!
