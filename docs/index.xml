@@ -6,7 +6,16 @@
     <description>Recent content on medicine-blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 14 Apr 2023 22:29:46 +0900</lastBuildDate><atom:link href="https://medicine-t.github.io/medicine-t/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 May 2023 14:45:36 +0900</lastBuildDate><atom:link href="https://medicine-t.github.io/medicine-t/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TexでAskmapsとgraphicsでハマった話</title>
+      <link>https://medicine-t.github.io/medicine-t/post/tex-askmaps-graphics/</link>
+      <pubDate>Mon, 29 May 2023 14:45:36 +0900</pubDate>
+      
+      <guid>https://medicine-t.github.io/medicine-t/post/tex-askmaps-graphics/</guid>
+      <description>カルノー図を書きたくてaskmapsパッケージを、図を入れたくてgraphicsを使っていたらなんか図が表示されない…とくにログも出てない… 結論としてはgraphicsより先にaskmapsを読み込ん</description>
+    </item>
+    
     <item>
       <title>インストール大会2023のTA</title>
       <link>https://medicine-t.github.io/medicine-t/post/install-taikai-2023/</link>
