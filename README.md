@@ -17,6 +17,5 @@ Here are some ideas to get you started:
 -->
 
 ### Hackathon
-####  JP HACKS2023
-[みんなでToDo](https://github.com/jphacks/OL_2318)
+#### JP HACKS2023 [みんなでToDo](https://github.com/jphacks/OL_2318)
 
