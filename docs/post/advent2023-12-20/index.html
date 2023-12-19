@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="HandheldFriendly" content="True" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="generator" content="Hugo 0.121.1">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/site.webmanifest">
+<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+
+<title>カラオケを作りたーーーーい！ - medicine-blog</title>
+
+
+<meta name="author" content="yakumi" />
+
+
+
+<meta name="keywords" content="琉大, ie, advent2023" />
+
+
+<meta property="og:title" content="カラオケを作りたーーーーい！" />
+<meta name="twitter:title" content="カラオケを作りたーーーーい！" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://medicine-t.github.io/medicine-t/post/advent2023-12-20/" /><meta property="og:description" content="お疲れ様です！！(気さくな挨拶)
+この記事は琉球大学知能情報アドベントカレンダー 2023 12/20日の参加記事です！
+12月も終盤戦、カラオケっぽいものを作ってみたという記事をお送りします" />
+<meta name="twitter:description" content="お疲れ様です！！(気さくな挨拶)
+この記事は琉球大学知能情報アドベントカレンダー 2023 12/20日の参加記事です！
+12月も終盤戦、カラオケっぽいものを作ってみたという記事をお送りします" /><meta property="og:image" content="https://medicine-t.github.io/image/icon-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://medicine-t.github.io/image/icon-image.png" /><meta property="article:published_time" content="2023-12-19T21:17:24+09:00" /><meta property="article:modified_time" content="2023-12-19T21:17:24+09:00" />
+
+
+<style>
+    @media (prefers-color-scheme: dark) {
+        body[data-theme='auto'] img {
+            filter: brightness(60%);
+        }
+    }
+
+    body[data-theme='dark'] img {
+        filter: brightness(60%);
+    }
+</style>
+
+
+
+
+<link rel="stylesheet" href="https://medicine-t.github.io/medicine-t/assets/css/fuji.min.0771e1e697702cf186e475c7a335e8fff9e4f76bb7efdf1952eb8813c310b1c2d3b39ddfe28c32689d8bfc1bc0191347ac34b6ac5af6de355a76a3a6ee3d619d.css" integrity="sha512-B3Hh5pdwLPGG5HXHozXo//nk92u3798ZUuuIE8MQscLTs53f4owyaJ2L/BvAGRNHrDS2rFr23jVadqOm7j1hnQ==" />
+
+
+
+
+
+
+
+
+</head>
+
+<body
+  data-theme="dark"
+  data-theme-auto='false'
+  >
+    <script data-cfasync="false">
+  
+  var fujiThemeData = localStorage.getItem('fuji_data-theme');
+  
+  if (!fujiThemeData) {
+    localStorage.setItem('fuji_data-theme', 'auto');
+  } else {
+    
+    if (fujiThemeData !== 'auto') {
+      document.body.setAttribute('data-theme', fujiThemeData === 'dark' ? 'dark' : 'light');
+    }
+  }
+</script>
+
+    <header>
+    <div class="container-lg clearfix">
+        <div class="col-12 header">
+            <a class="title-main" href="https://medicine-t.github.io/medicine-t/">medicine-blog</a>
+            
+            <span class="title-sub">なんとはない大学生のなんとはない話</span>
+            
+        </div>
+    </div>
+</header>
+
+    <main>
+        <div class="container-lg clearfix">
+            
+            <div class="col-12 col-md-9 float-left content">
+                
+<article>
+    
+    <h2 class="post-item post-title">
+        <a href="https://medicine-t.github.io/medicine-t/post/advent2023-12-20/">カラオケを作りたーーーーい！</a>
+    </h2>
+    <div class="post-item post-meta">
+        <span><i class="iconfont icon-today-sharp"></i>&nbsp;2023-12-19</span>
+
+<span><i class="iconfont icon-file-tray-sharp"></i>&nbsp;2630 字</span>
+<span><i class="iconfont icon-time-sharp"></i>&nbsp;6 分</span>
+<span><i class="iconfont icon-pricetags-sharp"></i>&nbsp;<a href="/medicine-t/tags/%E7%90%89%E5%A4%A7">琉大</a>&nbsp;<a href="/medicine-t/tags/ie">ie</a>&nbsp;<a href="/medicine-t/tags/advent2023">advent2023</a>&nbsp;</span>
+
+    </div>
+    
+    <div class="post-content markdown-body">
+        <p>お疲れ様です！！(気さくな挨拶)</p>
+<p>この記事は<a href="https://adventar.org/calendars/8736" target="_blank">琉球大学知能情報アドベントカレンダー 2023</a> 12/20日の参加記事です！</p>
+<p>12月も終盤戦、カラオケっぽいものを作ってみたという記事をお送りします</p>
+<h1 id="tldr">TL;DR</h1>
+<ul>
+<li>Next.js でカラオケみたいに音符が流れてくるやつを作った。<a href="https://medicine-t.github.io/karaoke/" target="_blank">これ</a></li>
+<li>AudioAnalyserをこねる</li>
+<li>Next.js をGitHub Pagesで静的デプロイするときのハマりポイントがある。</li>
+</ul>
+<h2 id="カラオケしたい">カラオケしたい</h2>
+<p>みなさん、カラオケはお好きですか？
+私はたまに(occasionally)ヒトカラをしています。しないというみなさんも家で軽く歌ったりしますよね？<br>
+そんなときに気になるのは今歌った音程はあっているのか…？ずっと鼻歌で歌っていても、YouTubeで音楽と一緒に歌っていても、カラオケに行くとまともに音程が取れないなんてこともザラにあります。</p>
+<p>とうことで、曲の音程と自分がいまだしている音程が知りたいわけです。<br>
+つまり、カラオケを作りたいということですね。</p>
+<p>カラオケを作るには、いくつかの必須の機能があります。</p>
+<ul>
+<li>声の音程を判定できること</li>
+<li>曲の音符(ノート)が表示されていること</li>
+<li>音符がいい感じに流れること</li>
+</ul>
+<p>カラオケ(JoySoundとかDAMとか)は判定ぐらいしかしてくれませんが、せっかくですしFFTの結果をそのまま使っても面白そうですね。
+ということで作っていきましょう！</p>
+<h2 id="audioanalyserをこねこね">AudioAnalyserをこねこね</h2>
+<p>今回は練習ついでにNext.js (TS) を使用していきます。</p>
+<p>マイクの音声はこんな感じでとれます。</p>
+<pre><code class="language-typescript">const stream = await navigator.mediaDevices.getUserMedia({
+  audio: {
+    echoCancellation: false,
+    noiseSuppression: false,
+  },
+});
+</code></pre>
+<p>echoCancellationとnoiseSuppressionはあんまり見慣れませんが、見ての通りノイズ抑制とかを無効化しています。
+これが有効だとうまく声が入らなかったりしたので…</p>
+<p>そして、JSにはなんと音声処理をできたりするAudioNodeインスタンスがあって、その中でも <a href="https://developer.mozilla.org/ja/docs/Web/API/AnalyserNode" target="_blank">AnalyserNode (MDN)</a>を使えば音声のFFTができます。</p>
+<p>AnalyserNodeの使い方を調べるとだいたい音楽データを流したりしていますがやっぱり声もやりたいですよね。
+FFTした結果はこんな感じで取ることができます。</p>
+<pre><code class="language-typescript">const fftSize = 8192;
+analyser.fftSize = fftSize;
+const bufferSize = analyser.frequencyBinCount;
+const sampleRate = audioContext.sampleRate;
+const buffer = new Uint8Array(bufferSize); // 結果が入るところ
+
+audioContext = new AudioContext();
+analyser = audioContext.createAnalyser();
+const input = audioContext.createMediaStreamSource(stream);
+input.connect(analyser);
+analyser.getByteFrequencyData(buffer);
+</code></pre>
+<p>これでいい感じに周波数情報が取れたわけですが、これをビジュアライズするにはひと工夫必要です。
+なんと、愚直にグラフ化すると、直感的なグラフにならないんですね～。<br>
+音程の周波数の差は高周波数の方ほど大きくなっていくので、思ったより変なグラフができます。</p>
+<p>そのため、周波数側をlogスケールの片対数グラフにするといい感じに直感的なグラフができます。
+<p><div class="image-wrapper ratio-3x2">
+  <img class="lazyload img-zoomable" data-src="/medicine-t/images/advent2023-12-20/fft.png" alt="周波数のグラフ" />
+</div></p>
+この画像は下の方が低周波数、上に行くほど高周波数になるやつです。</p>
+<h3 id="ピッチを取りたい">ピッチを取りたい</h3>
+<p>周波数は取れたわけですが、ピッチ(音高)も取りたいです。なんでかというと、音高がないとどの周波数を音程として判定したらいいかわからなくなるからですね。<br>
+(今のところ判定はないんですが)</p>
+<p>ピッチの判定とかで軽くググると機械学習を応用するーーとか書いてあるんですがそこまでの精度もいらないですし静的にデプロイできなさそうなので嫌です。JS(TS)でできるぐらいで十分なんです。</p>
+<p>結局、周波数のピーク(山)を検出して、倍音を持っている山&rsquo;sのうち低いものの周波数をピッチとして表示しています。<br>
+声からもn倍音が出ているのでそれを手がかりにピッチを取っているわけです。</p>
+<h2 id="ustをこねこね">USTをこねこね</h2>
+<p>話は変わって、カラオケみたいなやつには音符を表示できる必要があります。カラオケに行けばノーツが表示されるアレです。<br>
+アレを作るには、まず使うデータを考えないといけません。音程の情報があって、ノーツの長さがあって、テンポの情報があって…そんなファイルを読み込めたら一番うれしいですね。<br>
+さて、ボーカロイド(広義)はそういうデータを扱っているはずですね。歌声合成ソフトには音程もノーツ長もテンポも必須です。<br>
+歌声合成ソフトは割りといっぱいって、フリーのUTAU,neutrino ,Synthesizer V Studio Basic(ボイスは有料) ,有料ならVOCALOID, Synthesizer V Studio Pro, Cevio AI&hellip; いっぱいあります。</p>
+<p>保存形式としては、MIDIやUSTファイル,vsqファイルとかがあるみたいでした。そのなかでパースが楽そうな保存ファイルとして、UTAUの.ustファイルを使うことにしました。なんでかというとUTAUはUSTを公開してくれている人が多かったり、平文で保存されていて、扱いやすそうだったからです。</p>
+<p>USTファイルの構成は<a href="https://w.atwiki.jp/utaou/pages/64.html#id_e7beb30c" target="_blank">@wiki</a>にまとめてくれている方がました。大感謝！<br>
+使うのはとりあえずテンポと音階(MIDI Note番号),ノートの長さ が必要なのでひとまずそれを読むパーサを書いて使います。</p>
+<p>これをいい感じにCanvasに描画するとそれっぽい感じのグラフができました！！
+<p><div class="image-wrapper ratio-32x9">
+  <img class="lazyload img-zoomable" data-src="/medicine-t/images/advent2023-12-20/notes.png" alt="ノーツ" />
+</div></p>
+(表示のUSTは<a href="https://www.nicovideo.jp/watch/sm6752330" target="_blank">sm6752330</a>で配布されているものをお借りしました)</p>
+<h2 id="ひとまず完成">ひとまず完成</h2>
+<p>とりあえず今できた部分を完成として出してしまいます。
+ホントはノーツが表示範囲外になったらいい感じにずらすとか、一時停止できたりとかの機能がほしいところですが…</p>
+<p>Zuckerbergが<code>done is better than perfect</code>とか言っている有名な画像もあることですしね。</p>
+<h2 id="nextjs---githubpages-ハマりポイント">Next.js -&gt; GitHubPages ハマりポイント</h2>
+<p>やったー！完成だーー！といってGitHubPagesへデプロイして動作確認したら動かない！！Canvasが描画されてない！！</p>
+<p>困りましたね。<br>
+Consoleにはスクリプトの404エラーが書いてありました。</p>
+<p>うーーん？見覚えがありますね？
+HugoをGitHubPagesへ持っていったときにも見た記憶があります。そうです、ページのパスがサブディレクトリになっているときにルートへ読みに行って404を吐いてきていました。</p>
+<p>ということで next.config.js へ次の設定を追加します</p>
+<pre><code class="language-js">  basePath: &quot;/karaoke&quot;,
+  assetPrefix: &quot;/karaoke/&quot;,
+</code></pre>
+<p>これで正しいパスへ読みに行ってくれるようになりました！
+……あれー？まだ404です。パスはあっているんですが…</p>
+<p>解決策を求めてネットの海をさまよったところ見つけました。みんなの味方StackOverflowにありました！<br>
+<a href="https://stackoverflow.com/questions/61450307/js-and-css-not-loading-when-hosting-next-application-on-github-pages" target="_blank">js and css not loading when hosting next application on GitHub pages</a></p>
+<p>ドキュメントのルートに.nojekyll という名前の空ファイルを置いておかないとGitHubがデプロイしてくれないそうですね！</p>
+<p>これをつけることでやっと公開できました！めでたしめでたし</p>
+<p>これで今日の記事は終わりです。
+明日は 琉大つよつよ勢代表 @Yoshisaur さんの記事です
+お楽しみに！</p>
+    </div>
+</article>
+
+
+
+
+            </div>
+            <aside class="col-12 col-md-3 float-left sidebar">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>ページ</h3>
+        <ul>
+            
+            <li>
+                <a href="/medicine-t/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/medicine-t/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/medicine-t/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/medicine-t/search/">Search</a>
+            </li>
+            
+            <li>
+                <a href="/medicine-t/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>リンク</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/medicine-t" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>タグ</h3>
+        <div>
+            
+            <span>
+                <a href="/medicine-t/tags/advent2023/">advent2023</a>
+            </span>
+            
+            <span>
+                <a href="/medicine-t/tags/ie/">ie</a>
+            </span>
+            
+            <span>
+                <a href="/medicine-t/tags/ta/">TA</a>
+            </span>
+            
+            <span>
+                <a href="/medicine-t/tags/tex/">tex</a>
+            </span>
+            
+            <span>
+                <a href="/medicine-t/tags/%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC/">サイエンスリーダー</a>
+            </span>
+            
+            <span>
+                <a href="/medicine-t/tags/%E7%90%89%E5%A4%A7/">琉大</a>
+            </span>
+            
+        </div>
+    </div>
+    
+</aside>
+
+        </div>
+        <div class="btn">
+    <div class="btn-menu" id="btn-menu">
+        <i class="iconfont icon-grid-sharp"></i>
+    </div>
+    <div class="btn-toggle-mode">
+        <i class="iconfont icon-contrast-sharp"></i>
+    </div>
+    <div class="btn-scroll-top">
+        <i class="iconfont icon-chevron-up-circle-sharp"></i>
+    </div>
+</div>
+<aside class="sidebar-mobile" style="display: none;">
+  <div class="sidebar-wrapper">
+    
+    <div class="sidebar-item sidebar-pages">
+        <h3>ページ</h3>
+        <ul>
+            
+            <li>
+                <a href="/medicine-t/">Home</a>
+            </li>
+            
+            <li>
+                <a href="/medicine-t/archives/">Archives</a>
+            </li>
+            
+            <li>
+                <a href="/medicine-t/about/">About</a>
+            </li>
+            
+            <li>
+                <a href="/medicine-t/search/">Search</a>
+            </li>
+            
+            <li>
+                <a href="/medicine-t/index.xml">RSS</a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-links">
+        <h3>リンク</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/medicine-t" target="_blank"><span>GitHub</span></a>
+            </li>
+            
+        </ul>
+    </div>
+    
+    <div class="sidebar-item sidebar-tags">
+        <h3>タグ</h3>
+        <div>
+            
+            <span>
+                <a href="/medicine-t/tags/advent2023/">advent2023</a>
+            </span>
+            
+            <span>
+                <a href="/medicine-t/tags/ie/">ie</a>
+            </span>
+            
+            <span>
+                <a href="/medicine-t/tags/ta/">TA</a>
+            </span>
+            
+            <span>
+                <a href="/medicine-t/tags/tex/">tex</a>
+            </span>
+            
+            <span>
+                <a href="/medicine-t/tags/%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9%E3%83%AA%E3%83%BC%E3%83%80%E3%83%BC/">サイエンスリーダー</a>
+            </span>
+            
+            <span>
+                <a href="/medicine-t/tags/%E7%90%89%E5%A4%A7/">琉大</a>
+            </span>
+            
+        </div>
+    </div>
+    
+    
+    
+    
+  </div>
+</aside>
+    </main>
+
+    <footer>
+    <div class="container-lg clearfix">
+        <div class="col-12 footer">
+            
+            <span>&copy; 2022-2023
+                <a href="https://medicine-t.github.io/medicine-t/">yakumi</a>
+                 | <a href="https://github.com/medicine-t/medicine-t">Source code</a> 
+                | Powered by <a href="https://github.com/dsrkafuu/hugo-theme-fuji/"
+                   target="_blank">Fuji-v2</a> &amp; <a href="https://gohugo.io/"
+                                                    target="_blank">Hugo</a> 
+            </span>
+        </div>
+    </div>
+</footer>
+
+    
+<script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha512-N9IJRoc3LaP3NDoiGkcPa4gG94kapGpaA5Zq9/Dr04uf5TbLFU5q0o8AbRhLKUUlp8QFS2u7S+Yti0U7QtuZvQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/components/prism-core.min.js" integrity="sha512-LCKPTo0gtJ74zCNMbWw04ltmujpzSR4oW+fgN+Y1YclhM5ZrHCZQAJE4quEodcI/G122sRhSGU2BsSRUZ2Gu3w==" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/prismjs@1.27.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-GP4x8UWxWyh4BMbyJGOGneiTbkrWEF5izsVJByzVLodP8CuJH/n936+yQDMJJrOPUHLgyPbLiGw2rXmdvGdXHA==" crossorigin="anonymous"></script>
+
+
+
+<script defer src="/medicine-t/assets/js/fuji.min.645f1123be695831f419ab54c1bcba327325895c740014006e57070d4f3e5d6b553e929c4b46f40ea707249e9c7f7c2a446d32a39ce7319f80a34525586a8e0f.js" integrity="sha512-ZF8RI75pWDH0GatUwby6MnMliVx0ABQAblcHDU8&#43;XWtVPpKcS0b0DqcHJJ6cf3wqRG0yo5znMZ&#43;Ao0UlWGqODw=="></script>
+
+
+
+</body>
+
+</html>
