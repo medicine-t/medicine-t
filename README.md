@@ -1,5 +1,5 @@
 ### Hi there 👋
-a student of University of the Ryukyu
+a student of University of the Ryukyus
 
 <!--
 **medicine-t/medicine-t** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
