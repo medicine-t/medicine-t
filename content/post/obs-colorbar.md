@@ -4,7 +4,7 @@ description: ""
 date: "2024-02-24T11:04:08+09:00"
 thumbnail: ""
 categories:
-  - ["blog", "tech"]
+  - "tech"
 tags:
   - "obs"
 ---
