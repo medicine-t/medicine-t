@@ -1,157 +1,36 @@
-baseURL = "https://medicine-t.github.io/medicine-t/"
-title = "medicine-blog"
+baseurl = "https://medicine-t.github.io/medicine-t/"
+title = "medicine-t blog"
+languageCode = "jp-ja"
+paginate = "10" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
-theme = "fuji"
-hasCJKLanguage = true
-enableEmoji = true
-enableRobotsTXT = true
-disableKinds = ["taxonomy"]
-ignoreErrors = ["error-disable-taxonomy"]
-publishDir = "docs"
+[Author]
+  name = "薬味(medicine-t / horseradish_ie)"
+  bio = "check profile at github or twitter"
+  avatar = "images/icon-image.png"
 
-math = true
+[Params]
+  description = "John Doe's Personal blog about everything" # Description of your site
+  opengraph = true
+  twitter_cards = false
+  readmore = false # Show "Read more" button in list if true
+  authorbox = true
+  pager = true
+  post_meta = ["date", "categories"] # Order of post meta information
+  mainSections = ["post", "docs"]
 
-## Change this two to switch between different language
-languageCode = "ja"           # For RSS, view https://www.rssboard.org/rss-language-codes
-defaultContentLanguage = "ja" # For HTML page, now support: en, zh-hans, zh-hant, ja, nl, pl, it
+[Params.logo]
+  subtitle = "そこはかとなく" # Logo subtitle
 
-summaryLength = 100 # Custom summary length, add <!--more--> in post file to custom split point
-paginate = 10
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist"]
 
-# googleAnalytics = "UA-000000000-0" # Set your Google Analytics UA here
-
-[outputFormats]
-[outputFormats.SearchIndex]
-isPlainText = true
-notAlternative = true
-mediaType = "application/json"
-path = "/search/"
-
-[outputs]
-home = ["HTML", "RSS", "SearchIndex"]
-
-[permalinks]
-post = "/:section/:filename/" # Custom post links, e.g. "/:year/:month/:title/"
-
-[params]
-author = "yakumi"                # You can also set author in post front matter individually
-subTitle = "なんとはない大学生のなんとはない話"
-defaultTheme = "dark"              # default theme when first visit (auto|dark|light)
-
-# Source URL of the website, will appear in the footer
-sourceURL = "https://github.com/medicine-t/medicine-t"
-
-# Use CloudFlare Workers to accelerate the Google Analytics
-# If you are using this please comment the googleAnalytics above
-# Check https://github.com/SukkaW/cloudflare-workers-async-google-analytics for more details
-# googleAnalyticsTid = "UA-000000000-0"
-# googleAnalyticsRoute = "https://*.*.workers.dev/"
-
-# Google AdSense
-# The AdSense code will be inserted between the head tags of your site.
-# googleAdsense = "0000000000000000"
-
-# Word counter and read time indicator in post metadata
-showWordCounter = true
-showReadTime = true
-
-# License in the footer
-showLicenseInFooter = false
-
-# License at the end of each post
-showLicense = false
-showToc = false
-
-# Copyright
-copyrightStartYear = "2022"
-
-# Open Graph & Twitter Card variables
-# You can also set description and images in post front matter individually
-description = ""
-og = "/image/icon-image.png"                                          # This will use the image called og.png in static/img folder
-
-# Posts shown in homepage
-mainSections = ["post"]
-
-# Bangumi image chart id
-# bgmImageChart = "000000"
-
-# License
-#license = "CC BY-NC-SA 4.0"
-#licenseLink = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
-
-# Comments
-# utterances, see: https://utteranc.es/
-# utterancesRepo = "*/*"
-# utterancesIssueTerm = "pathname"
-
-# Disqus, see: https://disqus.com/admin/install/platforms/universalcode/
-# disqusShortname = "*********"
-# Also use DisqusJS for accessing from Mainland China, see: https://github.com/SukkaW/DisqusJS
-# If you want to set multiple api key, see theme's README for more details
-# disqusJSApi = "https://*********/"
-# disqusJSApikey = "**********"
-
-# custom lazyload placeholder
-# 16:9
-lazyPlaceholder = "/assets/lazyload/dsrca_loading_480x270.svg"
-# 32:9
-lazyPlaceholderRow = "/assets/lazyload/dsrca_loading_960x270.svg"
-# 8:9
-lazyPlaceholderCol = "/assets/lazyload/dsrca_loading_480x540.svg"
-
-# Let images display in full brightness under dark mode
-# disableDarkImage = true
-
-[markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true # Enable user to embed HTML snippets in Markdown content
-[markup.highlight]
-codeFences = false # Disable Hugo's code highlighter
-
-[markup.tableOfContents]
-startLevel = 2
-endLevel = 3
-
-[taxonomies]
-tag = "tags"
-
-[menu]
-[[menu.nav]]
-name = "Home"
-url = "/"
-weight = 1
-[[menu.nav]]
-name = "Archives"
-url = "/archives/"
-weight = 2
-[[menu.nav]]
-name = "About"
-url = "/about/"
-weight = 3
-[[menu.nav]]
-name = "Search"
-url = "/search/"
-weight = 4
-[[menu.nav]]
-name = "RSS"
-url = "/index.xml"
-weight = 5
-
-[[menu.link]]
-name = "GitHub"
-url = "https://github.com/medicine-t"
-weight = 1
-
-#[[menu.link]]
-#name = "Twitter"
-#url = "https://twitter.com/dsrkafuu"
-#weight = 2
-
-
-[build]
-noJSConfigInAssets = true
-
-[security]
-enableInlineShortcodes = true
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget (disabled by default)
