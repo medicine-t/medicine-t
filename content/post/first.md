@@ -2,8 +2,8 @@
 title: "MD単体からHugoに移行したはなし"
 date: 2022-09-25T16:56:16+09:00
 draft: false
+categories: ["blog"]
 ---
 
-つい3日ぐらい前にGitHub Pagesを作った。
-その時はMarkdownだけでやっていたんだけどテーマをしっかり作りたくなってHugoに移行した
-
+つい 3 日ぐらい前に GitHub Pages を作った。
+その時は Markdown だけでやっていたんだけどテーマをしっかり作りたくなって Hugo に移行した
