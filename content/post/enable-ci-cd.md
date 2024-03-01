@@ -1,5 +1,5 @@
 ---
-title: "Enable-Ci-Cd"
+title: "ブログにCI/CDを乗っける"
 description: ""
 date: "2024-02-24T11:01:49+09:00"
 thumbnail: ""
